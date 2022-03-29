@@ -3,13 +3,13 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 const Slider = () => {
     const [showingImage, setShowingImage] = useState("/img/slider-1.jpg");
-    const images = [
-        "/img/slider-1.jpg",
-        "/img/slider-2.jpg",
-        "/img/slider-3.jpg",
-    ];
-
+    
     useEffect(() => {
+        const images = [
+            "/img/slider-1.jpg",
+            "/img/slider-2.jpg",
+            "/img/slider-3.jpg",
+        ];
         let nomor = 0;
         const interval = setInterval(() => {
             if (nomor <= 1) {

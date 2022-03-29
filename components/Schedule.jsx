@@ -123,7 +123,7 @@ const Schedule = () => {
 							<p className="text-xl lg:text-2xl mb-2">Sabtu, 7 / 5 / 22</p>
 							<p className="text-xl lg:text-2xl mb-2">{days < 10 ? "0"+days+" Hari : " : +days+" Hari : "}{hours < 10 ? "0"+hours+" Jam : " : +hours+" Jam : "}{minutes < 10 ? "0"+minutes+" Menit : " : +minutes+" Menit : "}{seconds < 10 ? "0"+seconds+" Detik" : +seconds+" Detik"}</p>
 							<p className="text-xl lg:text-2xl mb-2">Gedung Serbaguna Soetrisno Widjaja</p>
-							<a href="https://maps.app.goo.gl/q7r7Z6UhHpeNNsPXA" target="_blank"><p className="lg:text-2xl rounded-full border-2 w-fit py-2 px-4">Buka Map</p></a>
+							<a href="https://maps.app.goo.gl/q7r7Z6UhHpeNNsPXA" target="_blank" rel="noreferrer"><p className="lg:text-2xl rounded-full border-2 w-fit py-2 px-4">Buka Map</p></a>
 						</div>
 					</div>
 				</div>

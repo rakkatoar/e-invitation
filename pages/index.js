@@ -11,8 +11,6 @@ export default function Home() {
         <title>Mayo &#38; Rakka Weeding</title>
         <meta name="description" content="Mayo & Rakka Weeding" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans&display=swap" rel="stylesheet"/>
       </Head>
       <Slider/>
       <Message/>
