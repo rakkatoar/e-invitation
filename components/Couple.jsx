@@ -19,7 +19,7 @@ const Couple = () => {
                         <p className="text-xl font-noto-sans">Ennol Wibisono dan Diana Runtunuwu</p>
                     </div>
                 </div>
-                <div className="womanWrapper mb-10 lg:mb-0">
+                <div className="womanWrapper">
                     <div className="w-[88vw] h-[88vw] lg:w-[24vw] lg:h-[24vw] mb-4 flex items-start relative flex-col-reverse">
                         <Image src="/img/square-male.png"
                         layout="fill"
