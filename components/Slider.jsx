@@ -24,7 +24,7 @@ const Slider = () => {
     }, []);
 
     return (
-        <div className="w-full h-screen flex items-center justify-center bg-mint-cream">
+        <div className="w-full h-screen flex items-center justify-center bg-cultured">
             <style jsx>
                 {`
                     .titleShadow {

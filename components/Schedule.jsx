@@ -40,7 +40,7 @@ const Schedule = () => {
 		}
 	}
 	return (
-		<div className="relative p-5 bg-mint-cream flex justify-between h-[76vh] lg:h-[56vh] flex-col lg:flex-row">
+		<div className="relative p-5 bg-cultured flex justify-between h-[76vh] lg:h-screen flex-col">
 			<style jsx>
 			{`
 				.box {
@@ -48,7 +48,6 @@ const Schedule = () => {
 					border-radius: 3px;
 					color: #fff;
 					position: absolute;
-					// top: 50%;
 					left: 50%;
 					transform: translate(-50%, -50%);
 					transform-style: preserve-3d;
@@ -105,7 +104,7 @@ const Schedule = () => {
 			`}
 			</style>
 			<div className="wrapper relative w-full h-full flex items-center justify-center">
-				<div className="box top-[64%] w-4/5 h-5/6 before:h-5/6 after:h-5/6 lg:before:h-4/5 lg:after:h-4/5">
+				<div className="box top-[64%] w-4/5 lg:w-2/5 h-5/6 before:h-5/6 after:h-5/6 lg:before:h-4/5 lg:after:h-4/5">
 					<div className="text h-3/5">
 						<div className="px-8">
 							<p className="text-4xl font-great-vibes">Akad</p>
@@ -116,13 +115,13 @@ const Schedule = () => {
 				</div>
 			</div>
 			<div className="wrapper relative w-full h-full flex items-center justify-center">
-				<div className="box top-[46%] w-4/5 h-full lg:h-4/5 before:h-full after:h-full lg:before:h-[116%] lg:after:h-[116%]">
+				<div className="box top-[46%] w-4/5 lg:w-2/5 h-full lg:h-4/5 before:h-full after:h-full lg:before:h-[116%] lg:after:h-[116%]">
 					<div className="text h-5/6 lg:h-[96%]">
 						<div className="px-8 flex items-center flex-col">
 							<p className="text-4xl font-great-vibes mb-2">Resepsi</p>
-							<p className="text-xl lg:text-2xl mb-2">Sabtu, 7 / 5 / 22</p>
+							<p className="text-xl lg:text-2xl mb-2">Sabtu, 7 / 5 / 22 | 19.30 - 21.00</p>
 							<p className="text-xl lg:text-2xl mb-2">{days < 10 ? "0"+days+" Hari : " : +days+" Hari : "}{hours < 10 ? "0"+hours+" Jam : " : +hours+" Jam : "}{minutes < 10 ? "0"+minutes+" Menit : " : +minutes+" Menit : "}{seconds < 10 ? "0"+seconds+" Detik" : +seconds+" Detik"}</p>
-							<p className="text-xl lg:text-2xl mb-2">Gedung Serbaguna Soetrisno Widjaja</p>
+							<p className="text-xl lg:text-2xl mb-4">Gedung Serbaguna Soetrisno Widjaja</p>
 							<a href="https://maps.app.goo.gl/q7r7Z6UhHpeNNsPXA" target="_blank" rel="noreferrer"><p className="lg:text-2xl rounded-full border-2 w-fit py-2 px-4">Buka Map</p></a>
 						</div>
 					</div>

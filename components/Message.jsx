@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Message = () => {
 
     return (
-        <div className="px-10 py-5 bg-mint-cream">
+        <div className="px-10 py-5 bg-cultured">
 					<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ scale:[.95,1.005,1] }}
