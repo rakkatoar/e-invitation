@@ -24,7 +24,7 @@ const Slider = () => {
     }, []);
 
     return (
-        <div className="w-full h-screen flex items-center justify-center bg-cultured">
+        <div className="w-full h-screen flex items-center justify-center bg-cultured overflow-hidden">
             <style jsx>
                 {`
                     .titleShadow {
@@ -36,7 +36,8 @@ const Slider = () => {
             </style>
             <motion.div
                 animate={{
-                    y: [0, -10],
+                    // y: [0, -10],
+                    scale: [1, 1.02]
                 }}
                 transition={{
                     duration: 5,

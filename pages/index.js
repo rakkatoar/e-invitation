@@ -4,6 +4,7 @@ import Message from '../components/Message'
 import Couple from '../components/Couple'
 import Schedule from '../components/Schedule'
 import Prokes from '../components/Prokes'
+import Slideshow from '../components/Slideshow'
 import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Couple/>
       <Schedule/>
       <Prokes/>
+      <Slideshow/>
     </div>
   )
 }

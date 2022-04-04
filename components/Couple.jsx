@@ -34,20 +34,6 @@ const Couple = () => {
                         <p className="text-xl font-noto-sans">Imam Hadori, S.H dan Tri Meiwati Haryoto, S.H</p>
                     </div>
                 </div>
-                {/* <div className="womanWrapper">
-                    <div className="w-full h-[124vw] lg:h-[24vw] mb-4 flex items-start relative flex-col-reverse">
-                        <Image src="/img/bordered-male.png"
-                        layout="fill"
-                        objectFit="contain"
-                        alt=""/>
-                    </div>
-                    <div className="couple-info text-center z-10 text-spanish-gray">
-                        <p className="text-8xl lg:text-8xl font-great-vibes mb-5 text-maximum-yellow-red">Mayo</p>
-                        <p className="text-xl font-noto-sans">Yashinta Mayowi, S.Sos.</p>
-                        <p className="text-xl font-noto-sans">Putri pertama</p>
-                        <p className="text-xl font-noto-sans">Imam Hadori, S.H dan Tri Meiwati Haryoto, S.H</p>
-                    </div>
-                </div> */}
             </div>
         </div>
     );
