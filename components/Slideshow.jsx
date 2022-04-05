@@ -23,9 +23,9 @@ const Slideshow = () => {
         return () => clearInterval(interval);
     }, []);
     return (
-        <div className="w-full h-screen px-10 bg-cultured">
-					<div className="flex">
-            <div className="w-1/2 h-[50vh] overflow-hidden p-5">
+        <div className="w-full px-5 lg:px-10 bg-cultured">
+					<div className="flex flex-col lg:flex-row">
+            <div className="w-full lg:w-1/2 lg:h-[50vh] overflow-hidden py-5 lg:pr-5 lg:pb-5 order-2 lg:order-1">
                 <motion.div
                     initial={{ opacity: 0 }}
 										animate={{ scale:[.95,1.005,1] }}
@@ -41,7 +41,7 @@ const Slideshow = () => {
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nostrum, soluta saepe aliquam voluptatum repellat cupiditate dolore iusto similique inventore distinctio deserunt autem modi quod fuga officia harum sint pariatur.</p>
                 </motion.div>
             </div>
-            <div className="w-1/2 h-[50vh] overflow-hidden">
+            <div className="w-full h-[25vh] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
                 <motion.div
                     animate={{
                         scale: [1, 1.03],
@@ -62,8 +62,8 @@ const Slideshow = () => {
                 </motion.div>
             </div>
 					</div>
-					<div className="flex">
-            <div className="w-1/2 h-[50vh] overflow-hidden">
+					<div className="flex flex-col lg:flex-row">
+            <div className="w-full h-[25vh] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-1">
                 <motion.div
                     animate={{
                         scale: [1, 1.03],
@@ -83,7 +83,7 @@ const Slideshow = () => {
                     />
                 </motion.div>
             </div>
-            <div className="w-1/2 h-[50vh] overflow-hidden p-5">
+            <div className="w-full lg:w-1/2 lg:h-[50vh] overflow-hidden py-5 lg:pl-5 lg:pb-5 order-2 lg:order-2">
                 <motion.div
                     initial={{ opacity: 0 }}
 										animate={{ scale:[.95,1.005,1] }}
@@ -100,8 +100,8 @@ const Slideshow = () => {
                 </motion.div>
             </div>
 					</div>
-					<div className="flex">
-            <div className="w-1/2 h-[50vh] overflow-hidden p-5">
+					<div className="flex flex-col lg:flex-row">
+            <div className="w-full lg:w-1/2 lg:h-[50vh] overflow-hidden py-5 lg:pr-5 lg:pb-5 order-2 lg:order-1">
                 <motion.div
                     initial={{ opacity: 0 }}
 										animate={{ scale:[.95,1.005,1] }}
@@ -117,7 +117,7 @@ const Slideshow = () => {
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nostrum, soluta saepe aliquam voluptatum repellat cupiditate dolore iusto similique inventore distinctio deserunt autem modi quod fuga officia harum sint pariatur.</p>
                 </motion.div>
             </div>
-            <div className="w-1/2 h-[50vh] overflow-hidden">
+            <div className="w-full h-[25vh] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
                 <motion.div
                     animate={{
                         scale: [1, 1.03],

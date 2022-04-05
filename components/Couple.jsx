@@ -24,7 +24,8 @@ const Couple = () => {
                         <Image src="/img/square-male.png"
                         layout="fill"
                         objectFit="contain"
-                        className="rounded-tl-[50%] rounded-br-[50%]"
+                        className="rounded-full"
+                        // className="rounded-tl-[50%] rounded-br-[50%]"
                         alt=""/>
                     </div>
                     <div className="couple-info text-center z-10 text-spanish-gray lg:w-[24vw]">
