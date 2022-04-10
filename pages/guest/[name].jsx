@@ -41,7 +41,7 @@ const Guest = () => {
       <Modal open={open} onClose={onCloseModal} center showCloseIcon={false} styles={bg}>
         <p className="font-noto-sans text-xl mb-5 text-cultured">Kepada Yth.</p>
         <div>
-          <h2 className="font-great-vibes text-center text-4xl text-maximum-yellow-red">{name != '' ? name : 'Tamu'}</h2>
+          <h2 className="font-great-vibes text-center text-4xl text-maximum-yellow-red capitalize">{name != '' ? name : 'Tamu'}</h2>
           <p className="font-noto-sans text-center text-lg mb-5 text-cultured">Di Tempat</p>
         </div>
         <button onClick={onCloseModal} className="border-2 rounded-md p-2 w-full text-cultured">Lihat Undangan</button>
