@@ -6,13 +6,14 @@ import Schedule from '../components/Schedule'
 import Prokes from '../components/Prokes'
 import Slideshow from '../components/Slideshow'
 import Closing from '../components/Closing'
+import Music from '../components/Music'
 import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
         <title>Mayo &#38; Rakka Weeding</title>
-        <meta name="description" content="Mayo & Rakka Weeding" />
+        <meta name="description" content="Mayo &#38; Rakka Weeding" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Slider/>
@@ -22,6 +23,7 @@ export default function Home() {
       <Prokes/>
       <Slideshow/>
       <Closing/>
+      <Music/>
     </div>
   )
 }

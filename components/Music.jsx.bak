@@ -1,0 +1,67 @@
+// import Image from "next/image";
+// import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import ReactPlayer from "react-player"
+const Music = () => {
+	const [playing, setPlaying] = useState(true);
+	const opts = {
+	height: '390',
+	width: '640',
+	playerVars: {
+		autoPlay: 1,
+		mute: 0
+	},
+};
+useEffect(() => {
+	const player = document.getElementsByClassName('react-player'[0])
+	console.log(player);
+}, [])
+const _onReady = (event) =>  {
+	event.target.playVideo();
+}
+let player;
+let options={
+	soundcloud:{
+		playing:true
+	}
+}
+const setPlayer = (event) =>  {
+	player = event
+	// console.log(player);
+}
+const toogleVideo = () =>  {
+		if(playing){
+			setPlaying(false);
+			options = {
+				soundcloud:{
+					playing:false
+				}
+			}
+		} else {
+			setPlaying(true);
+			options = {
+				soundcloud:{
+					playing:true
+				}
+			}
+		}
+}
+	
+
+  return (
+        <div>
+					<div className="fixed bottom-0 left-0">
+						{playing &&  <button onClick={toogleVideo} >Pause</button>}
+						{!playing &&  <button onClick={toogleVideo}>Play</button>}
+					</div>
+					<div>
+      <ReactPlayer className='react-player' playing={true} onPlay={setPlayer}
+			config={options}
+        url="https://soundcloud.com/user-328148184/sezairi-its-you-official-music?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+      />
+    </div>
+        </div>
+    );
+};
+
+export default Music;
