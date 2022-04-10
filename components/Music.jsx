@@ -32,6 +32,11 @@ const Music = () => {
 		// player.pauseVideo();
   }
 
+	const endPlay = (event) =>  {
+		player = event.target;
+		setPlaying(false);
+  }
+
 	
 	// const setPlayer = (event) =>  {
 	// 	player = event.target;
@@ -68,7 +73,7 @@ const Music = () => {
 					</div>
 					<div className="hidden">
 						{/* <YouTube videoId="1ieSEOX5OEE" opts={opts} onReady={_onReady} onPlay={setPlayer} onPause={setPlayer}  /> */}
-						<YouTube videoId="1ieSEOX5OEE" opts={opts} onReady={_onReady} onEnded={setPlay} onPlay={setPlay} onPause={setPause}  />
+						<YouTube videoId="1ieSEOX5OEE" opts={opts} onReady={_onReady} onEnded={endPlay} onPlay={setPlay} onPause={setPause}  />
 					</div>
         </div>
     );
