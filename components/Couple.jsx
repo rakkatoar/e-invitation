@@ -1,39 +1,76 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 const Couple = () => {
 
     return (
         <div className="p-5 bg-cultured">
             <div className="w-full coupleWrapper flex justify-around items-start flex-col lg:flex-row">
-                <div className="maleWrapper mb-10 lg:mb-0">
-                    <div className="w-[88vw] h-[88vw] lg:w-[24vw] lg:h-[24vw] mb-4 flex items-start relative flex-col-reverse">
+                <div className="maleWrapper mb-10 lg:mb-0 flex flex-col items-center">
+                    <motion.div
+					initial={{ opacity: 0 }}
+					animate={{ scale:[.95,1.005,1] }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
+					transition={{
+						duration: 1,
+						delay:.2,
+						ease: "linear",
+				}}  className="w-[60vw] h-[60vw] lg:w-[24vw] lg:h-[24vw] mb-4 flex items-start relative flex-col-reverse">
                         <Image src="/img/square-male.png"
                         layout="fill"
                         objectFit="contain"
                         className="rounded-full"
                         alt=""/>
-                    </div>
-                    <div className="couple-info text-center z-10 text-spanish-gray lg:w-[24vw]">
-                        <p className="text-8xl lg:text-8xl font-great-vibes mb-5 text-maximum-yellow-red">Rakka</p>
+                    </motion.div>
+                    <motion.div
+					initial={{ opacity: 0 }}
+					animate={{ scale:[.95,1.005,1] }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
+					transition={{
+						duration: 1,
+						delay:.4,
+						ease: "linear",
+				}}  className="couple-info text-center z-10 text-spanish-gray lg:w-[24vw]">
+                        <p className="text-8xl lg:text-8xl font-charm mb-5 text-maximum-yellow-red">Rakka</p>
                         <p className="text-xl font-noto-sans">Rakka Toar Sadewa Wibisono, S.Kom.</p>
                         <p className="text-xl font-noto-sans">Putra pertama</p>
                         <p className="text-xl font-noto-sans">Ennol Wibisono dan Diana Runtunuwu</p>
-                    </div>
+                    </motion.div>
                 </div>
-                <div className="womanWrapper">
-                    <div className="w-[88vw] h-[88vw] lg:w-[24vw] lg:h-[24vw] mb-4 flex items-start relative flex-col-reverse">
+                <div className="womanWrapper flex flex-col items-center">
+                    <motion.div
+					initial={{ opacity: 0 }}
+					animate={{ scale:[.95,1.005,1] }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
+					transition={{
+						duration: 1,
+						delay:.2,
+						ease: "linear",
+				}}  className="w-[60vw] h-[60vw] lg:w-[24vw] lg:h-[24vw] mb-4 flex items-start relative flex-col-reverse">
                         <Image src="/img/square-male.png"
                         layout="fill"
                         objectFit="contain"
                         className="rounded-full"
                         // className="rounded-tl-[50%] rounded-br-[50%]"
                         alt=""/>
-                    </div>
-                    <div className="couple-info text-center z-10 text-spanish-gray lg:w-[24vw]">
-                    <p className="text-8xl lg:text-8xl font-great-vibes mb-5 text-maximum-yellow-red">Mayo</p>
+                    </motion.div>
+                    <motion.div
+					initial={{ opacity: 0 }}
+					animate={{ scale:[.95,1.005,1] }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
+					transition={{
+						duration: 1,
+						delay:.4,
+						ease: "linear",
+				}}  className="couple-info text-center z-10 text-spanish-gray lg:w-[24vw]">
+                    <p className="text-8xl lg:text-8xl font-charm mb-5 text-maximum-yellow-red">Mayo</p>
                         <p className="text-xl font-noto-sans">Yashinta Mayowi, S.Sos.</p>
                         <p className="text-xl font-noto-sans">Putri pertama</p>
                         <p className="text-xl font-noto-sans">Imam Hadori, S.H dan Tri Meiwati Haryoto, S.H</p>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

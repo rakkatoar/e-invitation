@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'great-vibes': ['"Great Vibes"', 'cursive'],
         'noto-sans': ['"Noto Sans"', 'cursive'],
+        'charm': ['"Charm"', 'cursive'],
        },
     },
     colors:{

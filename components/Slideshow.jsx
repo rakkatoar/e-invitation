@@ -24,120 +24,192 @@ const Slideshow = () => {
     }, []);
     return (
         <div className="w-full px-5 lg:px-10 bg-cultured">
-					<div className="flex flex-col lg:flex-row">
-            <div className="w-full lg:w-1/2 lg:h-[50vh] overflow-hidden py-5 lg:pr-5 lg:pb-5 order-2 lg:order-1">
+            <div className="flex flex-col lg:flex-row">
                 <motion.div
-                    initial={{ opacity: 0 }}
-										animate={{ scale:[.95,1.005,1] }}
-										whileInView={{ opacity: 1 }}
-										viewport={{ once: true }}
-										transition={{
-											duration: 1,
-											delay:.2,
-											ease: "linear",
-									}}
-                    className="w-full h-full relative flex justify-center items-center"
-                >
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nostrum, soluta saepe aliquam voluptatum repellat cupiditate dolore iusto similique inventore distinctio deserunt autem modi quod fuga officia harum sint pariatur.</p>
+					initial={{ opacity: 0 }}
+					animate={{ scale:[.95,1.005,1] }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
+					transition={{
+						duration: 1,
+						delay:.2,
+						ease: "linear",
+				}} className="w-full lg:w-1/2 lg:h-[50vh] overflow-hidden py-5 lg:pr-5 lg:pb-5 order-2 lg:order-1">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ scale: [0.95, 1.005, 1] }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 1,
+                            delay: .2,
+                            ease: "linear",
+                        }}
+                        className="w-full h-full relative flex justify-center items-center"
+                    >
+                        <p className="font-noto-sans">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Fugit nostrum, soluta saepe aliquam voluptatum
+                            repellat cupiditate dolore iusto similique inventore
+                            distinctio deserunt autem modi quod fuga officia
+                            harum sint pariatur.
+                        </p>
+                    </motion.div>
+                </motion.div>
+                <motion.div
+					initial={{ opacity: 0 }}
+					animate={{ scale:[.95,1.005,1] }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
+					transition={{
+						duration: 1,
+						delay:.2,
+						ease: "linear",
+				}} className="w-full h-[25vh] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
+                    <motion.div
+                        animate={{
+                            scale: [1, 1.03],
+                        }}
+                        transition={{
+                            duration: 5,
+                            ease: "linear",
+                            repeat: Infinity,
+                        }}
+                        className="w-full h-full relative brightness-80"
+                    >
+                        <Image
+                            src={showingImage}
+                            layout="fill"
+                            objectFit="cover"
+                            alt=""
+                        />
+                    </motion.div>
                 </motion.div>
             </div>
-            <div className="w-full h-[25vh] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
+            <div className="flex flex-col lg:flex-row">
                 <motion.div
-                    animate={{
-                        scale: [1, 1.03],
-                    }}
-                    transition={{
-                        duration: 5,
-                        ease: "linear",
-                        repeat: Infinity,
-                    }}
-                    className="w-full h-full relative brightness-80"
-                >
-                    <Image
-                        src={showingImage}
-                        layout="fill"
-                        objectFit="cover"
-                        alt=""
-                    />
+					initial={{ opacity: 0 }}
+					animate={{ scale:[.95,1.005,1] }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
+					transition={{
+						duration: 1,
+						delay:.2,
+						ease: "linear",
+				}} className="w-full h-[25vh] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-1">
+                    <motion.div
+                        animate={{
+                            scale: [1, 1.03],
+                        }}
+                        transition={{
+                            duration: 5,
+                            ease: "linear",
+                            repeat: Infinity,
+                        }}
+                        className="w-full h-full relative brightness-80"
+                    >
+                        <Image
+                            src={showingImage}
+                            layout="fill"
+                            objectFit="cover"
+                            alt=""
+                        />
+                    </motion.div>
+                </motion.div>
+                <motion.div
+					initial={{ opacity: 0 }}
+					animate={{ scale:[.95,1.005,1] }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
+					transition={{
+						duration: 1,
+						delay:.2,
+						ease: "linear",
+				}} className="w-full lg:w-1/2 lg:h-[50vh] overflow-hidden py-5 lg:pl-5 lg:pb-5 order-2 lg:order-2">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ scale: [0.95, 1.005, 1] }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 1,
+                            delay: 0.2,
+                            ease: "linear",
+                        }}
+                        className="w-full h-full relative flex justify-center items-center"
+                    >
+                        <p className="font-noto-sans">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Fugit nostrum, soluta saepe aliquam voluptatum
+                            repellat cupiditate dolore iusto similique inventore
+                            distinctio deserunt autem modi quod fuga officia
+                            harum sint pariatur.
+                        </p>
+                    </motion.div>
                 </motion.div>
             </div>
-					</div>
-					<div className="flex flex-col lg:flex-row">
-            <div className="w-full h-[25vh] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-1">
+            <div className="flex flex-col lg:flex-row">
                 <motion.div
-                    animate={{
-                        scale: [1, 1.03],
-                    }}
-                    transition={{
-                        duration: 5,
-                        ease: "linear",
-                        repeat: Infinity,
-                    }}
-                    className="w-full h-full relative brightness-80"
-                >
-                    <Image
-                        src={showingImage}
-                        layout="fill"
-                        objectFit="cover"
-                        alt=""
-                    />
+					initial={{ opacity: 0 }}
+					animate={{ scale:[.95,1.005,1] }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
+					transition={{
+						duration: 1,
+						delay:.2,
+						ease: "linear",
+				}} className="w-full lg:w-1/2 lg:h-[50vh] overflow-hidden py-5 lg:pr-5 lg:pb-5 order-2 lg:order-1">
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ scale: [0.95, 1.005, 1] }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 1,
+                            delay: 0.2,
+                            ease: "linear",
+                        }}
+                        className="w-full h-full relative flex justify-center items-center"
+                    >
+                        <p className="font-noto-sans">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Fugit nostrum, soluta saepe aliquam voluptatum
+                            repellat cupiditate dolore iusto similique inventore
+                            distinctio deserunt autem modi quod fuga officia
+                            harum sint pariatur.
+                        </p>
+                    </motion.div>
+                </motion.div>
+                <motion.div
+					initial={{ opacity: 0 }}
+					animate={{ scale:[.95,1.005,1] }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
+					transition={{
+						duration: 1,
+						delay:.2,
+						ease: "linear",
+				}} className="w-full h-[25vh] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
+                    <motion.div
+                        animate={{
+                            scale: [1, 1.03],
+                        }}
+                        transition={{
+                            duration: 5,
+                            ease: "linear",
+                            repeat: Infinity,
+                        }}
+                        className="w-full h-full relative brightness-80"
+                    >
+                        <Image
+                            src={showingImage}
+                            layout="fill"
+                            objectFit="cover"
+                            alt=""
+                        />
+                    </motion.div>
                 </motion.div>
             </div>
-            <div className="w-full lg:w-1/2 lg:h-[50vh] overflow-hidden py-5 lg:pl-5 lg:pb-5 order-2 lg:order-2">
-                <motion.div
-                    initial={{ opacity: 0 }}
-										animate={{ scale:[.95,1.005,1] }}
-										whileInView={{ opacity: 1 }}
-										viewport={{ once: true }}
-										transition={{
-											duration: 1,
-											delay:.2,
-											ease: "linear",
-									}}
-                    className="w-full h-full relative flex justify-center items-center"
-                >
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nostrum, soluta saepe aliquam voluptatum repellat cupiditate dolore iusto similique inventore distinctio deserunt autem modi quod fuga officia harum sint pariatur.</p>
-                </motion.div>
-            </div>
-					</div>
-					<div className="flex flex-col lg:flex-row">
-            <div className="w-full lg:w-1/2 lg:h-[50vh] overflow-hidden py-5 lg:pr-5 lg:pb-5 order-2 lg:order-1">
-                <motion.div
-                    initial={{ opacity: 0 }}
-										animate={{ scale:[.95,1.005,1] }}
-										whileInView={{ opacity: 1 }}
-										viewport={{ once: true }}
-										transition={{
-											duration: 1,
-											delay:.2,
-											ease: "linear",
-									}}
-                    className="w-full h-full relative flex justify-center items-center"
-                >
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit nostrum, soluta saepe aliquam voluptatum repellat cupiditate dolore iusto similique inventore distinctio deserunt autem modi quod fuga officia harum sint pariatur.</p>
-                </motion.div>
-            </div>
-            <div className="w-full h-[25vh] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
-                <motion.div
-                    animate={{
-                        scale: [1, 1.03],
-                    }}
-                    transition={{
-                        duration: 5,
-                        ease: "linear",
-                        repeat: Infinity,
-                    }}
-                    className="w-full h-full relative brightness-80"
-                >
-                    <Image
-                        src={showingImage}
-                        layout="fill"
-                        objectFit="cover"
-                        alt=""
-                    />
-                </motion.div>
-            </div>
-					</div>
         </div>
     );
 };

@@ -66,7 +66,7 @@ const Slider = () => {
                 <p className="titleShadow z-10 absolute text-3xl lg:text-4xl font-noto-sans text-linen mb-32 lg:mb-44">
                     We are getting married
                 </p>
-                <p className="titleShadow z-10 absolute text-5xl lg:text-8xl font-great-vibes text-linen">
+                <p className="titleShadow z-10 absolute text-5xl lg:text-8xl font-charm text-linen">
                     Mayo &#38; Rakka
                 </p>
                 <p className="titleShadow z-10 absolute text-2xl lg:text-4xl font-noto-sans text-linen mt-32 lg:mt-44">

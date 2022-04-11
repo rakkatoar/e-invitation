@@ -15,7 +15,7 @@ const Closing = () => {
 						ease: "linear",
 				}} className="font-noto-sans text-maximum-yellow-red w-full text-center px-5 lg:px-20">
 					<p className="text-xl italic font-noto-sans mb-5">With Love,</p>
-					<p className="font-great-vibes text-5xl">Rakka &#38; Mayo</p>
+					<p className="font-charm text-5xl">Rakka &#38; Mayo</p>
 					</motion.div>
         </div>
     );
