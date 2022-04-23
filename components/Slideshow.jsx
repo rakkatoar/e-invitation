@@ -40,7 +40,7 @@ const Slideshow = () => {
         return () => clearInterval(interval);
     }, []);
     return (
-        <div className="w-full lg:px-10 bg-cultured">
+        <div className="w-full py-5 lg:px-10 bg-cultured">
             <div className="flex flex-col lg:flex-row">
                 <motion.div
 					initial={{ opacity: 0 }}

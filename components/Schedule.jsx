@@ -40,7 +40,7 @@ const Schedule = () => {
 		}
 	}
 	return (
-		<div className="relative p-5 bg-cultured flex justify-between h-[76vh] lg:h-screen flex-col">
+		<div className="relative p-5 bg-cultured flex justify-between flex-col">
 			<style jsx>
 			{`
 				.box {
@@ -112,8 +112,8 @@ const Schedule = () => {
 						duration: 1,
 						delay:.2,
 						ease: "linear",
-				}}  className="wrapper relative w-full h-full flex items-center justify-center">
-				<div className="bg-charcoal rounded-xl top-[64%] w-4/5 lg:w-2/5">
+				}}  className="wrapper relative w-full h-full flex items-center justify-center mb-5">
+				<div className="bg-charcoal rounded-xl w-full lg:w-2/5">
 					<div className="text-center">
 						<div className="p-8">
 							<p className="text-4xl font-charm text-maximum-yellow-red">Akad</p>
@@ -133,7 +133,7 @@ const Schedule = () => {
 						delay:.4,
 						ease: "linear",
 				}}  className="wrapper relative w-full h-full flex items-center justify-center">
-				<div className="bg-charcoal rounded-xl top-[46%] w-4/5 lg:w-2/5">
+				<div className="bg-charcoal rounded-xl w-full lg:w-2/5">
 						<div className="p-8 flex items-center flex-col text-center">
 							<p className="text-4xl font-charm mb-2 text-maximum-yellow-red">Resepsi</p>
 							<p className="text-xl lg:text-2xl mb-2 text-cultured">Sabtu, 7 / 5 / 22</p>
