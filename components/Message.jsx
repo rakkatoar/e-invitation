@@ -4,7 +4,7 @@ const Message = () => {
 
     return (
         <div className="px-10 py-5 bg-cultured">
-					<motion.div
+					{/* <motion.div
 					initial={{ opacity: 0 }}
 					animate={{ scale:[.95,1.005,1] }}
 					whileInView={{ opacity: 1 }}
@@ -18,7 +18,7 @@ const Message = () => {
                     width="230"
 										height="180"
                     alt=""/>
-					</motion.div>
+					</motion.div> */}
 					<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ scale:[.95,1.005,1] }}

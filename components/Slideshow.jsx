@@ -2,28 +2,44 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 const Slideshow = () => {
-    const [showingImage, setShowingImage] = useState("/img/slider-1.jpg");
+    const [showingImage1, setShowingImage1] = useState("/img/story-1-1.png");
+    const [showingImage2, setShowingImage2] = useState("/img/story-2-1.png");
+    const [showingImage3, setShowingImage3] = useState("/img/story-3-1.png");
 
     useEffect(() => {
-        const images = [
-            "/img/slider-1.jpg",
-            "/img/slider-2.jpg",
-            "/img/slider-3.jpg",
+        const story1 = [
+            "/img/story-1-1.png",
+            "/img/story-1-2.png",
+            "/img/story-1-3.png",
+        ];
+        const story2 = [
+            "/img/story-2-1.png",
+            "/img/story-2-2.png",
+            "/img/story-2-3.png",
+        ];
+        const story3 = [
+            "/img/story-3-1.png",
+            "/img/story-3-2.png",
+            "/img/story-3-3.png",
         ];
         let nomor = 0;
         const interval = setInterval(() => {
             if (nomor <= 1) {
                 nomor++;
-                setShowingImage(images[nomor]);
+                setShowingImage1(story1[nomor]);
+                setShowingImage2(story2[nomor]);
+                setShowingImage3(story3[nomor]);
             } else {
                 nomor = 0;
-                setShowingImage(images[nomor]);
+                setShowingImage1(story1[nomor]);
+                setShowingImage2(story2[nomor]);
+                setShowingImage3(story3[nomor]);
             }
         }, 5000);
         return () => clearInterval(interval);
     }, []);
     return (
-        <div className="w-full px-5 lg:px-10 bg-cultured">
+        <div className="w-full lg:px-10 bg-cultured">
             <div className="flex flex-col lg:flex-row">
                 <motion.div
 					initial={{ opacity: 0 }}
@@ -45,7 +61,7 @@ const Slideshow = () => {
                             delay: .2,
                             ease: "linear",
                         }}
-                        className="w-full h-full relative flex justify-center items-center"
+                        className="w-full h-full px-5 relative flex justify-center items-center"
                     >
                         <p className="font-noto-sans">
                             Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -78,7 +94,7 @@ const Slideshow = () => {
                         className="w-full h-full relative brightness-80"
                     >
                         <Image
-                            src={showingImage}
+                            src={showingImage1}
                             layout="fill"
                             objectFit="cover"
                             alt=""
@@ -109,7 +125,7 @@ const Slideshow = () => {
                         className="w-full h-full relative brightness-80"
                     >
                         <Image
-                            src={showingImage}
+                            src={showingImage2}
                             layout="fill"
                             objectFit="cover"
                             alt=""
@@ -136,7 +152,7 @@ const Slideshow = () => {
                             delay: 0.2,
                             ease: "linear",
                         }}
-                        className="w-full h-full relative flex justify-center items-center"
+                        className="w-full h-full px-5 relative flex justify-center items-center"
                     >
                         <p className="font-noto-sans">
                             Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -169,7 +185,7 @@ const Slideshow = () => {
                             delay: 0.2,
                             ease: "linear",
                         }}
-                        className="w-full h-full relative flex justify-center items-center"
+                        className="w-full h-full px-5 relative flex justify-center items-center"
                     >
                         <p className="font-noto-sans">
                             Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -202,7 +218,7 @@ const Slideshow = () => {
                         className="w-full h-full relative brightness-80"
                     >
                         <Image
-                            src={showingImage}
+                            src={showingImage3}
                             layout="fill"
                             objectFit="cover"
                             alt=""

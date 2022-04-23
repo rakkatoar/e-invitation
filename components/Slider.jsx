@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 const Slider = () => {
-    const [showingImage, setShowingImage] = useState("/img/slider-1.jpg");
+    const [showingImage, setShowingImage] = useState("/img/slider-01.png");
     
     useEffect(() => {
         const images = [
-            "/img/slider-1.jpg",
-            "/img/slider-2.jpg",
-            "/img/slider-3.jpg",
+            "/img/slider-01.png",
+            "/img/slider-02.png",
+            "/img/slider-03.png",
         ];
         let nomor = 0;
         const interval = setInterval(() => {

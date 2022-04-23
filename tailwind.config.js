@@ -16,7 +16,8 @@ module.exports = {
       'mint-cream':'#E4EFE7',
       'baby-powder':'#FDFAF6',
       'maximum-yellow-red':'#EEC373',
-      'cultured':'#F4F4F4'
+      'cultured':'#F4F4F4',
+      'charcoal':'#2C3A47'
     }
   },
   plugins: [],

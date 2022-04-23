@@ -113,12 +113,12 @@ const Schedule = () => {
 						delay:.2,
 						ease: "linear",
 				}}  className="wrapper relative w-full h-full flex items-center justify-center">
-				<div className="box top-[64%] w-4/5 lg:w-2/5 h-5/6 before:h-5/6 after:h-5/6 lg:before:h-4/5 lg:after:h-4/5">
-					<div className="text h-3/5">
-						<div className="px-8">
-							<p className="text-4xl font-charm">Akad</p>
-							<p className="text-xl lg:text-2xl">Kamis, 5 / 5 / 22</p>
-							<p className="text-xl lg:text-2xl">Masjid Roudhotul Muchlisin</p>
+				<div className="bg-charcoal rounded-xl top-[64%] w-4/5 lg:w-2/5">
+					<div className="text-center">
+						<div className="p-8">
+							<p className="text-4xl font-charm text-maximum-yellow-red">Akad</p>
+							<p className="text-xl lg:text-2xl text-cultured">Kamis, 5 / 5 / 22</p>
+							<p className="text-xl lg:text-2xl text-cultured">Masjid Roudhotul Muchlisin</p>
 						</div>
 					</div>
 				</div>
@@ -133,16 +133,15 @@ const Schedule = () => {
 						delay:.4,
 						ease: "linear",
 				}}  className="wrapper relative w-full h-full flex items-center justify-center">
-				<div className="box top-[46%] w-4/5 lg:w-2/5 h-full lg:h-4/5 before:h-full after:h-full lg:before:h-[116%] lg:after:h-[116%]">
-					<div className="text h-5/6 lg:h-[96%]">
-						<div className="px-8 flex items-center flex-col">
-							<p className="text-4xl font-charm mb-2">Resepsi</p>
-							<p className="text-xl lg:text-2xl mb-2">Sabtu, 7 / 5 / 22 | 19.30 - 21.00</p>
-							<p className="text-xl lg:text-2xl mb-2">{days < 10 ? "0"+days+" Hari : " : +days+" Hari : "}{hours < 10 ? "0"+hours+" Jam : " : +hours+" Jam : "}{minutes < 10 ? "0"+minutes+" Menit : " : +minutes+" Menit : "}{seconds < 10 ? "0"+seconds+" Detik" : +seconds+" Detik"}</p>
-							<p className="text-xl lg:text-2xl mb-4">Gedung Serbaguna Soetrisno Widjaja</p>
-							<a href="https://maps.app.goo.gl/q7r7Z6UhHpeNNsPXA" target="_blank" rel="noreferrer"><button className="lg:text-2xl rounded-full border-2 py-2 px-4">Buka Map</button></a>
+				<div className="bg-charcoal rounded-xl top-[46%] w-4/5 lg:w-2/5">
+						<div className="p-8 flex items-center flex-col text-center">
+							<p className="text-4xl font-charm mb-2 text-maximum-yellow-red">Resepsi</p>
+							<p className="text-xl lg:text-2xl mb-2 text-cultured">Sabtu, 7 / 5 / 22</p>
+							<p className="text-xl lg:text-2xl mb-2 text-cultured">19.30 - 21.00</p>
+							<p className="text-xl lg:text-2xl mb-2 text-cultured">{days < 10 ? "0"+days+" Hari : " : +days+" Hari : "}{hours < 10 ? "0"+hours+" Jam : " : +hours+" Jam : "}{minutes < 10 ? "0"+minutes+" Menit : " : +minutes+" Menit : "}{seconds < 10 ? "0"+seconds+" Detik" : +seconds+" Detik"}</p>
+							<p className="text-xl lg:text-2xl mb-4 text-cultured">Gedung Serbaguna Soetrisno Widjaja</p>
+							<a href="https://maps.app.goo.gl/q7r7Z6UhHpeNNsPXA" target="_blank" rel="noreferrer"><button className="text-cultured lg:text-2xl rounded-full border-2 py-2 px-4">Buka Map</button></a>
 						</div>
-					</div>
 				</div>
 			</motion.div>
 		</div>
