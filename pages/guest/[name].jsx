@@ -45,12 +45,12 @@ const Guest = () => {
         <button onClick={onCloseModal} className="border-2 rounded-md p-2 w-full text-cultured">Lihat Undangan</button>
       </Modal>
       <Slider/>
-      <Message/>
+      {/* <Message/> */}
       <Couple/>
       <Schedule/>
-      <Prokes/>
+      {/* <Prokes/> */}
       <Slideshow/>
-      <Closing/>
+      {/* <Closing/> */}
       <Music/>
     </div>
   );

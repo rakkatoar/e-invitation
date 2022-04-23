@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 const Prokes = () => {
 
     return (
-        <div className="lg:px-[10vw] lg:py-[5vw] p-5 bg-cultured">
-					<div className="w-full relative flex justify-center h-[30vh] lg:h-[50vh] lg:px-16 lg:pt-16">
+        <div className=" bg-cultured">
+					<div className="w-full relative flex justify-center h-[30vh] lg:h-[40vh]">
 						<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ scale:[.95,1.005,1] }}

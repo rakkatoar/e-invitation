@@ -17,12 +17,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Slider/>
-      <Message/>
+      {/* <Message/> */}
       <Couple/>
       <Schedule/>
-      <Prokes/>
+      {/* <Prokes/> */}
       <Slideshow/>
-      <Closing/>
+      {/* <Closing/> */}
       <Music/>
     </div>
   )

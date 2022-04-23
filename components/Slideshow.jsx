@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Prokes from '../components/Prokes'
 const Slideshow = () => {
     const [showingImage1, setShowingImage1] = useState("/img/story-1-1.png");
     const [showingImage2, setShowingImage2] = useState("/img/story-2-1.png");
@@ -63,13 +64,10 @@ const Slideshow = () => {
                         }}
                         className="w-full h-full px-5 relative flex justify-center items-center"
                     >
-                        <p className="font-noto-sans">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Fugit nostrum, soluta saepe aliquam voluptatum
-                            repellat cupiditate dolore iusto similique inventore
-                            distinctio deserunt autem modi quod fuga officia
-                            harum sint pariatur.
-                        </p>
+                        <div>
+                            <p className="text-xl italic">&quot;Dan di antara tanda-tanda kekuasaan-Nya adalah diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri supaya kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang di antara kamu. Sesungguhnya yang demikian menjadi tanda-tanda kekuasaan-Nya bagi orang-orang yang berfikir.&quot;</p>
+                            <p className="text-2xl text-maximum-yellow-red">(QS. Ar-Rum: 21)</p>
+                        </div>
                     </motion.div>
                 </motion.div>
                 <motion.div
@@ -154,13 +152,7 @@ const Slideshow = () => {
                         }}
                         className="w-full h-full px-5 relative flex justify-center items-center"
                     >
-                        <p className="font-noto-sans">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Fugit nostrum, soluta saepe aliquam voluptatum
-                            repellat cupiditate dolore iusto similique inventore
-                            distinctio deserunt autem modi quod fuga officia
-                            harum sint pariatur.
-                        </p>
+                        <Prokes/>
                     </motion.div>
                 </motion.div>
             </div>
@@ -187,13 +179,17 @@ const Slideshow = () => {
                         }}
                         className="w-full h-full px-5 relative flex justify-center items-center"
                     >
-                        <p className="font-noto-sans">
+                        <div className="text-center text-maximum-yellow-red">
+                            <p className="text-xl italic font-noto-sans mb-5">With Love,</p>
+                            <p className="font-charm text-5xl">Rakka &#38; Mayo</p>
+                        </div>
+                        {/* <p className="font-noto-sans">
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Fugit nostrum, soluta saepe aliquam voluptatum
                             repellat cupiditate dolore iusto similique inventore
                             distinctio deserunt autem modi quod fuga officia
                             harum sint pariatur.
-                        </p>
+                        </p> */}
                     </motion.div>
                 </motion.div>
                 <motion.div
