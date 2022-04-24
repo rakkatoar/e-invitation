@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'noto-sans': ['"Noto Sans"', 'cursive'],
-        'charm': ['"Charm"', 'cursive'],
+        'montserrat': ['"Montserrat"', 'cursive'],
+        'corinthia': ['"Corinthia"', 'cursive'],
        },
     },
     colors:{

@@ -4,7 +4,7 @@ const Prokes = () => {
 
     return (
         <div className=" bg-cultured">
-					<div className="w-full relative flex justify-center h-[30vh] lg:h-[40vh]">
+					<div className="w-full relative flex justify-center h-[30vh] min-h-[20vw] lg:h-[40vh]">
 						<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ scale:[.95,1.005,1] }}
@@ -19,7 +19,7 @@ const Prokes = () => {
 												layout="fill"
                         objectFit="contain"
 												alt=""/>
-												<p className="bg-cultured font-noto-sans z-10 px-6 py-2 rounded-tl-full rounded-br-full text-center border-[#044655] border-[3.5px]">Pakai Masker</p>
+												<p className="bg-cultured font-montserrat z-10 px-6 py-2 rounded-tl-full rounded-br-full text-center border-[#044655] border-[3.5px]">Pakai Masker</p>
 						</motion.div>
 						<motion.div
 					initial={{ opacity: 0 }}
@@ -35,7 +35,7 @@ const Prokes = () => {
 												layout="fill"
                         objectFit="contain"
 												alt=""/>
-												<p className="bg-cultured font-noto-sans z-10 px-6 py-2 rounded-tl-full rounded-br-full text-center border-[#044655] border-[3.5px]">Cuci Tangan</p>
+												<p className="bg-cultured font-montserrat z-10 px-6 py-2 rounded-tl-full rounded-br-full text-center border-[#044655] border-[3.5px]">Cuci Tangan</p>
 						</motion.div>
 						<motion.div
 					initial={{ opacity: 0 }}
@@ -51,10 +51,10 @@ const Prokes = () => {
 												layout="fill"
                         objectFit="contain"
 												alt=""/>
-												<p className="bg-cultured font-noto-sans z-10 px-6 py-2 rounded-tl-full rounded-br-full text-center border-[#044655] border-[3.5px]">Jaga Jarak</p>
+												<p className="bg-cultured font-montserrat z-10 px-6 py-2 rounded-tl-full rounded-br-full text-center border-[#044655] border-[3.5px]">Jaga Jarak</p>
 						</motion.div>
 					</div>
-					<div className="w-full flex justify-center lg:hidden h-[20vh]">
+					<div className="w-full flex justify-center lg:hidden min-h-[20vw] h-[30vh]">
 						<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ scale:[.95,1.005,1] }}
@@ -69,7 +69,7 @@ const Prokes = () => {
 												layout="fill"
                         objectFit="contain"
 												alt=""/>
-												<p className="bg-cultured font-noto-sans z-10 px-6 py-2 rounded-tl-full rounded-br-full text-center border-[#044655] border-[3.5px]">Jaga Jarak</p>
+												<p className="bg-cultured font-montserrat z-10 px-6 py-2 rounded-tl-full rounded-br-full text-center border-[#044655] border-[3.5px]">Jaga Jarak</p>
 						</motion.div>
 					</div>
 					<motion.p
@@ -81,7 +81,7 @@ const Prokes = () => {
 						duration: 1,
 						delay:.2,
 						ease: "linear",
-				}} className="text-center font-noto-sans">Mari saling menjaga kesehatan dengan mengikuti protokol kesehatan sesuai anjuran pemerintah untuk mengurangi penyebaran Covid-19</motion.p>
+				}} className="text-center font-montserrat">Mari saling menjaga kesehatan dengan mengikuti protokol kesehatan sesuai anjuran pemerintah untuk mengurangi penyebaran Covid-19</motion.p>
         </div>
     );
 };

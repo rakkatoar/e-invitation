@@ -79,7 +79,7 @@ const Slideshow = () => {
 						duration: 1,
 						delay:.2,
 						ease: "linear",
-				}} className="w-full h-[25vh] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
+				}} className="w-full h-[25vh] min-h-[40vw] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
                     <motion.div
                         animate={{
                             scale: [1, 1.03],
@@ -110,7 +110,7 @@ const Slideshow = () => {
 						duration: 1,
 						delay:.2,
 						ease: "linear",
-				}} className="w-full h-[25vh] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-1">
+				}} className="w-full h-[25vh] min-h-[40vw] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-1">
                     <motion.div
                         animate={{
                             scale: [1, 1.03],
@@ -180,10 +180,10 @@ const Slideshow = () => {
                         className="w-full h-full px-5 relative flex justify-center items-center"
                     >
                         <div className="text-center text-maximum-yellow-red">
-                            <p className="text-xl italic font-noto-sans mb-5">With Love,</p>
-                            <p className="font-charm text-5xl">Rakka &#38; Mayo</p>
+                            <p className="text-xl italic font-montserrat mb-5">With Love,</p>
+                            <p className="font-corinthia text-5xl">Rakka &#38; Mayo</p>
                         </div>
-                        {/* <p className="font-noto-sans">
+                        {/* <p className="font-montserrat">
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Fugit nostrum, soluta saepe aliquam voluptatum
                             repellat cupiditate dolore iusto similique inventore
@@ -201,7 +201,7 @@ const Slideshow = () => {
 						duration: 1,
 						delay:.2,
 						ease: "linear",
-				}} className="w-full h-[25vh] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
+				}} className="w-full h-[25vh] min-h-[40vw] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
                     <motion.div
                         animate={{
                             scale: [1, 1.03],

@@ -116,7 +116,7 @@ const Schedule = () => {
 				<div className="bg-charcoal rounded-xl w-full lg:w-2/5">
 					<div className="text-center">
 						<div className="p-8">
-							<p className="text-4xl font-charm text-maximum-yellow-red">Akad</p>
+							<p className="text-4xl font-corinthia text-maximum-yellow-red">Akad</p>
 							<p className="text-xl lg:text-2xl text-cultured">Kamis, 5 / 5 / 22</p>
 							<p className="text-xl lg:text-2xl text-cultured">Masjid Roudhotul Muchlisin</p>
 						</div>
@@ -135,7 +135,7 @@ const Schedule = () => {
 				}}  className="wrapper relative w-full h-full flex items-center justify-center">
 				<div className="bg-charcoal rounded-xl w-full lg:w-2/5">
 						<div className="p-8 flex items-center flex-col text-center">
-							<p className="text-4xl font-charm mb-2 text-maximum-yellow-red">Resepsi</p>
+							<p className="text-4xl font-corinthia mb-2 text-maximum-yellow-red">Resepsi</p>
 							<p className="text-xl lg:text-2xl mb-2 text-cultured">Sabtu, 7 / 5 / 22</p>
 							<p className="text-xl lg:text-2xl mb-2 text-cultured">19.30 - 21.00</p>
 							<p className="text-xl lg:text-2xl mb-2 text-cultured">{days < 10 ? "0"+days+" Hari : " : +days+" Hari : "}{hours < 10 ? "0"+hours+" Jam : " : +hours+" Jam : "}{minutes < 10 ? "0"+minutes+" Menit : " : +minutes+" Menit : "}{seconds < 10 ? "0"+seconds+" Detik" : +seconds+" Detik"}</p>
