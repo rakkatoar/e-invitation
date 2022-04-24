@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 const Schedule = () => {
 	const [days, setDays] = useState(0);
 	const [hours, setHours] = useState(0);
@@ -43,64 +44,11 @@ const Schedule = () => {
 		<div className="relative p-5 bg-cultured flex justify-between flex-col">
 			<style jsx>
 			{`
-				.box {
-					background-color: transparent;
-					border-radius: 3px;
-					color: #fff;
-					position: absolute;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					transform-style: preserve-3d;
-					perspective: 2000px;
-					transition: 0.4s;
-					text-align: center;
-				}
-				.box:before {
-					content: "";
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					background: transparent;
-					border-top: 10px solid #EEC373;
-					border-left: 10px solid #EEC373;
-					box-sizing: border-box;
-				}
-				.box:after {
-					content: "";
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					border-bottom: 10px solid #EEC373;
-					border-right: 10px solid #EEC373;
-					box-sizing: border-box;
-				}
-				.box .text {
-					position: absolute;
-					top: 30px;
-					left: -30px;
-					width: calc(100% + 60px);
-					background-color: #2C3A47;
-					border-radius: 3px;
-					transition: 0.4s;
-				}
-				.box .text div {
-					position: absolute;
-					top: 50%;
-					left: 0;
-					transform: translateY(-50%);
-					text-align: center;
-					width: 100%;
-					line-height: 1.5;
-					box-sizing: border-box;
-				}
-				.box:hover {
-					transform: translate(-50%, -50%) rotateY(-20deg) skewY(3deg);
-				}
-				.box:hover .text {
-					transform: rotateY(20deg) skewY(-3deg);
-				}
+				.boxShadow {
+					box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+							0px 8px 13px rgba(0, 0, 0, 0.1),
+							0px 18px 23px rgba(0, 0, 0, 0.1);
+			}
 			`}
 			</style>
 			<motion.div
@@ -113,12 +61,12 @@ const Schedule = () => {
 						delay:.2,
 						ease: "linear",
 				}}  className="wrapper relative w-full h-full flex items-center justify-center mb-5">
-				<div className="bg-charcoal rounded-xl w-full lg:w-2/5">
+				<div className="bg-charcoal rounded-xl w-full lg:w-2/5 boxShadow">
 					<div className="text-center">
 						<div className="p-8">
 							<p className="text-4xl font-corinthia text-maximum-yellow-red">Akad</p>
-							<p className="text-xl lg:text-2xl text-cultured">Kamis, 5 / 5 / 22</p>
-							<p className="text-xl lg:text-2xl text-cultured">Masjid Roudhotul Muchlisin</p>
+							<p className="text-base lg:text-xl text-cultured">Kamis, 5 / 5 / 22</p>
+							<p className="text-base lg:text-xl text-cultured">Masjid Roudhotul Muchlisin</p>
 						</div>
 					</div>
 				</div>
@@ -133,14 +81,19 @@ const Schedule = () => {
 						delay:.4,
 						ease: "linear",
 				}}  className="wrapper relative w-full h-full flex items-center justify-center">
-				<div className="bg-charcoal rounded-xl w-full lg:w-2/5">
+				<div className="bg-charcoal rounded-xl w-full lg:w-2/5 boxShadow">
 						<div className="p-8 flex items-center flex-col text-center">
 							<p className="text-4xl font-corinthia mb-2 text-maximum-yellow-red">Resepsi</p>
-							<p className="text-xl lg:text-2xl mb-2 text-cultured">Sabtu, 7 / 5 / 22</p>
-							<p className="text-xl lg:text-2xl mb-2 text-cultured">19.30 - 21.00</p>
-							<p className="text-xl lg:text-2xl mb-2 text-cultured">{days < 10 ? "0"+days+" Hari : " : +days+" Hari : "}{hours < 10 ? "0"+hours+" Jam : " : +hours+" Jam : "}{minutes < 10 ? "0"+minutes+" Menit : " : +minutes+" Menit : "}{seconds < 10 ? "0"+seconds+" Detik" : +seconds+" Detik"}</p>
-							<p className="text-xl lg:text-2xl mb-4 text-cultured">Gedung Serbaguna Soetrisno Widjaja</p>
-							<a href="https://maps.app.goo.gl/q7r7Z6UhHpeNNsPXA" target="_blank" rel="noreferrer"><button className="text-cultured lg:text-2xl rounded-full border-2 py-2 px-4">Buka Map</button></a>
+							<p className="text-base lg:text-xl text-cultured">Sabtu, 7 / 5 / 22</p>
+							<p className="text-base lg:text-xl text-cultured">19.30 - 21.00</p>
+							<p className="text-base lg:text-xl text-cultured">{days < 10 ? "0"+days+" Hari : " : +days+" Hari : "}{hours < 10 ? "0"+hours+" Jam : " : +hours+" Jam : "}{minutes < 10 ? "0"+minutes+" Menit : " : +minutes+" Menit : "}{seconds < 10 ? "0"+seconds+" Detik" : +seconds+" Detik"}</p>
+							<p className="text-base lg:text-xl mb-4 text-cultured">Gedung Serbaguna Soetrisno Widjaja</p>
+							<a href="https://maps.app.goo.gl/q7r7Z6UhHpeNNsPXA" target="_blank" rel="noreferrer"><button className="text-cultured text-base lg:text-xl rounded-full border-2 py-2 px-4"><Image
+                    src="/img/map-icon.png"
+                    width="16"
+										height="16"
+                    alt=""
+                /> Buka Map</button></a>
 						</div>
 				</div>
 			</motion.div>

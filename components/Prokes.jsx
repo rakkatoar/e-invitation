@@ -4,7 +4,7 @@ const Prokes = () => {
 
     return (
         <div className=" bg-cultured">
-					<div className="w-full relative flex justify-center h-[30vh] min-h-[20vw] lg:h-[40vh]">
+					<div className="w-full relative flex justify-center h-[30vh] min-h-[200px] lg:h-[30vh]">
 						<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ scale:[.95,1.005,1] }}
@@ -54,7 +54,7 @@ const Prokes = () => {
 												<p className="bg-cultured font-montserrat z-10 px-6 py-2 rounded-tl-full rounded-br-full text-center border-[#044655] border-[3.5px]">Jaga Jarak</p>
 						</motion.div>
 					</div>
-					<div className="w-full flex justify-center lg:hidden min-h-[20vw] h-[30vh]">
+					<div className="w-full flex justify-center lg:hidden min-h-[200px] h-[30vh]">
 						<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ scale:[.95,1.005,1] }}
@@ -81,7 +81,7 @@ const Prokes = () => {
 						duration: 1,
 						delay:.2,
 						ease: "linear",
-				}} className="text-center font-montserrat">Mari saling menjaga kesehatan dengan mengikuti protokol kesehatan sesuai anjuran pemerintah untuk mengurangi penyebaran Covid-19</motion.p>
+				}} className="lg:text-lg text-center font-montserrat">Mari saling menjaga kesehatan dengan mengikuti protokol kesehatan sesuai anjuran pemerintah untuk mengurangi penyebaran Covid-19</motion.p>
         </div>
     );
 };

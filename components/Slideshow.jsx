@@ -65,8 +65,8 @@ const Slideshow = () => {
                         className="w-full h-full px-5 relative flex justify-center items-center"
                     >
                         <div>
-                            <p className="text-xl italic">&quot;Dan di antara tanda-tanda kekuasaan-Nya adalah diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri supaya kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang di antara kamu. Sesungguhnya yang demikian menjadi tanda-tanda kekuasaan-Nya bagi orang-orang yang berfikir.&quot;</p>
-                            <p className="text-2xl text-maximum-yellow-red">(QS. Ar-Rum: 21)</p>
+                            <p className="text-base lg:text-xl italic">&quot;Dan di antara tanda-tanda kekuasaan-Nya adalah diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri supaya kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang di antara kamu. Sesungguhnya yang demikian menjadi tanda-tanda kekuasaan-Nya bagi orang-orang yang berfikir.&quot;</p>
+                            <p className="text-lg lg:text-2xl text-maximum-yellow-red">(QS. Ar-Rum: 21)</p>
                         </div>
                     </motion.div>
                 </motion.div>
@@ -79,7 +79,7 @@ const Slideshow = () => {
 						duration: 1,
 						delay:.2,
 						ease: "linear",
-				}} className="w-full h-[25vh] min-h-[40vw] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
+				}} className="w-full h-[25vh] min-h-[360px] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
                     <motion.div
                         animate={{
                             scale: [1, 1.03],
@@ -110,7 +110,7 @@ const Slideshow = () => {
 						duration: 1,
 						delay:.2,
 						ease: "linear",
-				}} className="w-full h-[25vh] min-h-[40vw] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-1">
+				}} className="w-full h-[25vh] min-h-[360px] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-1">
                     <motion.div
                         animate={{
                             scale: [1, 1.03],
@@ -180,16 +180,9 @@ const Slideshow = () => {
                         className="w-full h-full px-5 relative flex justify-center items-center"
                     >
                         <div className="text-center text-maximum-yellow-red">
-                            <p className="text-xl italic font-montserrat mb-5">With Love,</p>
-                            <p className="font-corinthia text-5xl">Rakka &#38; Mayo</p>
+                            <p className="text-base lg:text-xl italic font-montserrat mb-3">With Love,</p>
+                            <p className="font-corinthia text-4xl">Rakka &#38; Mayo</p>
                         </div>
-                        {/* <p className="font-montserrat">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit. Fugit nostrum, soluta saepe aliquam voluptatum
-                            repellat cupiditate dolore iusto similique inventore
-                            distinctio deserunt autem modi quod fuga officia
-                            harum sint pariatur.
-                        </p> */}
                     </motion.div>
                 </motion.div>
                 <motion.div
@@ -201,7 +194,7 @@ const Slideshow = () => {
 						duration: 1,
 						delay:.2,
 						ease: "linear",
-				}} className="w-full h-[25vh] min-h-[40vw] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
+				}} className="w-full h-[25vh] min-h-[360px] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
                     <motion.div
                         animate={{
                             scale: [1, 1.03],
