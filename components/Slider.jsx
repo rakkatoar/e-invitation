@@ -37,7 +37,7 @@ const Slider = () => {
             <motion.div
                 animate={{
                     // y: [0, -10],
-                    scale: [1, 1.02]
+                    scale: [1, 1, 1.01, 1.02, 1.03]
                 }}
                 transition={{
                     duration: 5,
@@ -53,7 +53,7 @@ const Slider = () => {
                     alt=""
                 />
             </motion.div>
-            <motion.div className="w-full h-full absolute flex justify-center items-center py-[30vh]"
+            <motion.div className="w-full h-full absolute flex justify-center items-center py-[30vh] flex-col"
 						initial={{ opacity: 0 }}
 						animate={{ scale:[.95,1.005,1] }}
 						whileInView={{ opacity: 1 }}
@@ -63,13 +63,13 @@ const Slider = () => {
 							delay:.2,
 							ease: "linear",
 					}}>
-                <p className="titleShadow z-10 absolute text-xl lg:text-4xl font-montserrat text-linen mb-32 lg:mb-44">
+                <p className="titleShadow z-10 text-xl lg:text-4xl font-montserrat text-linen mb-4 lg:mb-10">
                     We are getting married
                 </p>
-                <p className="titleShadow z-10 absolute text-3xl lg:text-8xl font-corinthia text-linen">
+                <p className="titleShadow z-10 text-3xl lg:text-8xl font-corinthia text-linen">
                     Mayo &#38; Rakka
                 </p>
-                <p className="titleShadow z-10 absolute text-xl lg:text-4xl font-montserrat text-linen mt-32 lg:mt-44">
+                <p className="titleShadow z-10 text-xl lg:text-4xl font-montserrat text-linen mt-4 lg:mt-10">
                     5 &#47; 5 &#47; 22
                 </p>
             </motion.div>

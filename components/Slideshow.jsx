@@ -82,7 +82,7 @@ const Slideshow = () => {
 				}} className="w-full h-[25vh] min-h-[360px] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
                     <motion.div
                         animate={{
-                            scale: [1, 1.03],
+                            scale: [1, 1, 1.01, 1.02, 1.03],
                         }}
                         transition={{
                             duration: 5,
@@ -113,7 +113,7 @@ const Slideshow = () => {
 				}} className="w-full h-[25vh] min-h-[360px] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-1">
                     <motion.div
                         animate={{
-                            scale: [1, 1.03],
+                            scale: [1, 1, 1.01, 1.02, 1.03],
                         }}
                         transition={{
                             duration: 5,
@@ -197,7 +197,7 @@ const Slideshow = () => {
 				}} className="w-full h-[25vh] min-h-[360px] lg:w-1/2 lg:h-[50vh] overflow-hidden order-1 lg:order-2">
                     <motion.div
                         animate={{
-                            scale: [1, 1.03],
+                            scale: [1, 1, 1.01, 1.02, 1.03],
                         }}
                         transition={{
                             duration: 5,

@@ -12,10 +12,12 @@ import 'react-responsive-modal/styles.css';
 const Guest = () => {
   const router = useRouter();
   const { name } = router.query;
-  let parts = name?.split("=");
-  const child = '';
-  if(parts?.length > 0 ){
-    child = parts[1].split("&");
+  let parts = name?.split("&");
+  let sesi = '';
+  let guest = '';
+  if(parts){
+    sesi = parts[0];
+    guest = parts[1];
   }
   const [open, setOpen] = useState(true);
   const onCloseModal = () => setOpen(false);
@@ -41,14 +43,14 @@ const Guest = () => {
       <Modal open={open} onClose={onCloseModal} center showCloseIcon={false} styles={bg}>
         <p className="font-montserrat text-xl mb-5 text-cultured">Kepada Yth.</p>
         <div>
-          <h2 className="font-corinthia text-center text-4xl text-maximum-yellow-red capitalize">{parts && parts[2] != '' ? parts[2] : 'Tamu'}</h2>
+          <h2 className="font-corinthia text-center text-4xl text-maximum-yellow-red capitalize">{parts && guest != '' ? guest : 'Tamu'}</h2>
           <p className="font-montserrat text-center text-lg mb-5 text-cultured">Di Tempat</p>
         </div>
         <button onClick={onCloseModal} className="border-2 rounded-md p-2 w-full text-cultured">Lihat Undangan</button>
       </Modal>
       <Slider/>
       <Couple/>
-      <Schedule dataParentToChild = {child[0]}/>
+      <Schedule dataParentToChild = {sesi}/>
       <Slideshow/>
       <Music/>
     </div>
