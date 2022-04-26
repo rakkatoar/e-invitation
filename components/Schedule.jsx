@@ -7,7 +7,22 @@ const Schedule = (props) => {
 	const [minutes, setMinutes] = useState(0);
 	const [seconds, setSeconds] = useState(0);
 	useEffect(()=>{
-		initializeClock();
+		const initializeClock = () => {
+			updateClock();
+			setInterval(updateClock, 1000);
+		}
+
+		const updateClock = () => {
+			const t = getTimeRemaining(endtime);
+			setDays(t.days);
+			setHours(t.hours);
+			setMinutes(t.minutes);
+			setSeconds(t.seconds);
+			if (t.total <= 0) {
+				clearInterval(timeinterval);
+			}
+		}
+		// initializeClock();
 	},[])
 	const endtime = "2022-05-07"
 	const getTimeRemaining = (endtime) => {
@@ -25,21 +40,8 @@ const Schedule = (props) => {
 			seconds
 		};
 	}
-	const initializeClock = () => {
-		updateClock();
-		setInterval(updateClock, 1000);
-	}
 
-	const updateClock = () => {
-		const t = getTimeRemaining(endtime);
-		setDays(t.days);
-		setHours(t.hours);
-		setMinutes(t.minutes);
-		setSeconds(t.seconds);
-		if (t.total <= 0) {
-			clearInterval(timeinterval);
-		}
-	}
+	
 	return (
 		<div className="relative p-5 bg-cultured flex justify-between flex-col">
 			<style jsx>
