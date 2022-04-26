@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-const Schedule = () => {
+const Schedule = (props) => {
 	const [days, setDays] = useState(0);
 	const [hours, setHours] = useState(0);
 	const [minutes, setMinutes] = useState(0);
@@ -85,7 +85,7 @@ const Schedule = () => {
 						<div className="p-8 flex items-center flex-col text-center">
 							<p className="text-4xl font-corinthia mb-2 text-maximum-yellow-red">Resepsi</p>
 							<p className="text-base lg:text-xl text-cultured">Sabtu, 7 / 5 / 22</p>
-							<p className="text-base lg:text-xl text-cultured">19.30 - 21.00</p>
+							<p className="text-base lg:text-xl text-cultured">{props.dataParentToChild == 1 ? '18.00 - 19.30' : '19.30 - 21.00'}</p>
 							<p className="text-base lg:text-xl text-cultured">{days < 10 ? "0"+days+" Hari : " : +days+" Hari : "}{hours < 10 ? "0"+hours+" Jam : " : +hours+" Jam : "}{minutes < 10 ? "0"+minutes+" Menit : " : +minutes+" Menit : "}{seconds < 10 ? "0"+seconds+" Detik" : +seconds+" Detik"}</p>
 							<p className="text-base lg:text-xl mb-4 text-cultured">Gedung Serbaguna Soetrisno Widjaja</p>
 							<a href="https://maps.app.goo.gl/q7r7Z6UhHpeNNsPXA" target="_blank" rel="noreferrer"><button className="text-cultured text-base lg:text-xl rounded-full border-2 py-2 px-4"><Image
