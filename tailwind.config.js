@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'montserrat': ['"Montserrat"', 'cursive'],
-        'corinthia': ['"Corinthia"', 'cursive'],
+        'corinthia': ['"MonteCarlo"', 'cursive'],
        },
     },
     colors:{

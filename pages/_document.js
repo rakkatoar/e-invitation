@@ -10,7 +10,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=corinthia&family=Noto+Sans&display=swap"
             rel="stylesheet"
           /> */}
-          <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=corinthia&display=swap" rel="stylesheet"></link>
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=MonteCarlo&display=swap" rel="stylesheet"></link>
         </Head>
         <body>
           <Main />
