@@ -25,7 +25,7 @@ const Couple = () => {
 						delay:.2,
 						ease: "linear",
 				}}  className="w-[35vw] h-[35vw] lg:w-[24vw] lg:h-[24vw] mb-4 flex items-start relative flex-col-reverse">
-                        <Image src="/img/rakka.png"
+                        <Image src="/img/rakka.jpg"
                         layout="fill"
                         objectFit="contain"
                         className="rounded-full"
@@ -58,7 +58,7 @@ const Couple = () => {
 						delay:.2,
 						ease: "linear",
 				}}  className="w-[35vw] h-[35vw] lg:w-[24vw] lg:h-[24vw] mb-4 flex items-start relative flex-col-reverse">
-                        <Image src="/img/mayo.png"
+                        <Image src="/img/mayo.jpg"
                         layout="fill"
                         objectFit="contain"
                         className="rounded-full"

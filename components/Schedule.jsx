@@ -7,12 +7,13 @@ const Schedule = (props) => {
 	const [minutes, setMinutes] = useState(0);
 	const [seconds, setSeconds] = useState(0);
 	useEffect(()=>{
-		const initializeClock = () => {
+		// initializeClock();
+		// const initializeClock = () => {
 			updateClock();
 			setInterval(updateClock, 1000);
-		}
+		// }
 
-		const updateClock = () => {
+		function updateClock(){
 			const t = getTimeRemaining(endtime);
 			setDays(t.days);
 			setHours(t.hours);
@@ -22,7 +23,6 @@ const Schedule = (props) => {
 				clearInterval(timeinterval);
 			}
 		}
-		// initializeClock();
 	},[])
 	const endtime = "2022-05-07"
 	const getTimeRemaining = (endtime) => {

@@ -3,25 +3,25 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Prokes from '../components/Prokes'
 const Slideshow = () => {
-    const [showingImage1, setShowingImage1] = useState("/img/story-1-1.png");
-    const [showingImage2, setShowingImage2] = useState("/img/story-2-1.png");
-    const [showingImage3, setShowingImage3] = useState("/img/story-3-1.png");
+    const [showingImage1, setShowingImage1] = useState("/img/story-1-1.jpg");
+    const [showingImage2, setShowingImage2] = useState("/img/story-2-1.jpg");
+    const [showingImage3, setShowingImage3] = useState("/img/story-3-1.jpg");
 
     useEffect(() => {
         const story1 = [
-            "/img/story-1-1.png",
-            "/img/story-1-2.png",
-            "/img/story-1-3.png",
+            "/img/story-1-1.jpg",
+            "/img/story-1-2.jpg",
+            "/img/story-1-3.jpg",
         ];
         const story2 = [
-            "/img/story-2-1.png",
-            "/img/story-2-2.png",
-            "/img/story-2-3.png",
+            "/img/story-2-1.jpg",
+            "/img/story-2-2.jpg",
+            "/img/story-2-3.jpg",
         ];
         const story3 = [
-            "/img/story-3-1.png",
-            "/img/story-3-2.png",
-            "/img/story-3-3.png",
+            "/img/story-3-1.jpg",
+            "/img/story-3-2.jpg",
+            "/img/story-3-3.jpg",
         ];
         let nomor = 0;
         const interval = setInterval(() => {
