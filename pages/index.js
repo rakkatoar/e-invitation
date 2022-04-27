@@ -13,7 +13,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Mayo &#38; Rakka Weeding</title>
-        <meta name="description" content="Mayo &#38; Rakka Weeding" />
+        <meta name="description" content="Mayo &#38; Rakka Wedding" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Slider/>
