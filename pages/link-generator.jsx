@@ -30,7 +30,7 @@ const LinkGenerator = () => {
 						<br/>
 						Nama Tamu
 						<input className="w-full" type="text" placeholder="nama" onChange={e => { setName(e.currentTarget.value); }} onKeyUp={() => {generate()}}/>
-						<button onClick={() => {navigator.clipboard.writeText(name)}} className="border p-2">Copy</button>
+						<button onClick={() => {navigator.clipboard.writeText(name)}} className="border p-2 bg-[green] text-[white]">Copy</button>
 						<br/>
 						<br/>
 						{/* <button className="border p-2" onClick={generate}>Generate</button> */}
@@ -39,10 +39,12 @@ const LinkGenerator = () => {
 						<br/>
 						Hasil
 						<input className="w-full" type="text" placeholder="sesi" value={selectedSesi}/>
-						<button onClick={() => {navigator.clipboard.writeText(selectedSesi)}} className="border p-2">Copy</button>
+						<button onClick={() => {navigator.clipboard.writeText(selectedSesi)}} className="border p-2 bg-[green] text-[white]">Copy</button>
+						<br/>
+						<br/>
 						<input className="w-full" type="text" placeholder="result" value={result}/>
-						<button onClick={() => {navigator.clipboard.writeText(result)}} className="border p-2">Copy</button>
-						<button onClick={() => {setResult('')}} className="border p-2 ml-2">Reset</button>
+						<button onClick={() => {navigator.clipboard.writeText(result)}} className="border p-2 bg-[green] text-[white] mr-5">Copy</button>
+						<a href={`https://${result}`} target={"_blank"} rel={"noreferrer"}><button className="border p-2 bg-charcoal text-[white]">Test</button></a>
 					</div>
         </div>
     );
