@@ -26,16 +26,9 @@ const LinkGenerator = () => {
 					<div className="w-[50vw]">
 						Sesi
 						<input className="w-full" type="text" placeholder="sesi" onChange={e => { setSesi(e.currentTarget.value); }} onKeyUp={() => {generate()}}/>
-						<br/>
-						<br/>
 						Nama Tamu
 						<input className="w-full" type="text" placeholder="nama" onChange={e => { setName(e.currentTarget.value); }} onKeyUp={() => {generate()}}/>
 						<button onClick={() => {navigator.clipboard.writeText(name)}} className="border p-2 bg-[green] text-[white]">Copy</button>
-						<br/>
-						<br/>
-						{/* <button className="border p-2" onClick={generate}>Generate</button> */}
-						<br/>
-						<br/>
 						<br/>
 						Hasil
 						<input className="w-full" type="text" placeholder="sesi" value={selectedSesi}/>
