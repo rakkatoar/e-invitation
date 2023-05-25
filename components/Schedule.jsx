@@ -24,7 +24,9 @@ const Schedule = (props) => {
 			}
 		}
 	},[])
-	const endtime = "2023-05-07"
+
+	const currentDate = new Date();
+	const endtime = (currentDate.getFullYear()+1)+"-"+(currentDate.getMonth() + 1)+"-"+currentDate.getDate();
 	const getTimeRemaining = (endtime) => {
 		const total = Date.parse(endtime) - Date.parse(new Date());
 		const seconds = Math.floor((total / 1000) % 60);
