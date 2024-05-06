@@ -42,7 +42,7 @@ const Couple = () => {
 						ease: "linear",
 				}}  className="couple-info text-center z-10 text-spanish-gray lg:w-[24vw]">
                         <p className="text-4xl font-corinthia mb-5 text-maximum-yellow-red">Rakka</p>
-                        <p className="text-base lg:text-xl font-montserrat font-bold">Rakka Toar Sadewa Wibisono, S.Kom.</p>
+                        <p className="text-base lg:text-xl font-montserrat font-bold">Rakka Toar Sadewa, S.Kom.</p>
                         <p className="text-sm lg:text-lg font-montserrat">Putra pertama</p>
                         <p className="text-sm lg:text-lg font-montserrat">Ennol Wibisono dan Diana Runtunuwu</p>
                     </motion.div>
